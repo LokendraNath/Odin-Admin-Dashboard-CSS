@@ -1,6 +1,13 @@
 /* main content section */
+:root {
+  --primary: #1877f2;
+  --bg-light: #f5f5f5;
+  --text-dark: #303030;
+  --border-radius: 20px;
+  --shadow-md: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
 .main-content-section {
-  background-color: rgb(191, 193, 214);
+  background-color: rgb(206, 206, 216);
   padding: 0px;
 }
 .profile-nav {
@@ -16,13 +23,16 @@
 .search-box-container {
   display: flex;
   align-items: center;
+  width: 50%;
 }
 .main-top .search-box-container i {
   font-size: 20px;
   margin-right: 20px;
 }
 .main-top .search-box-container input {
-  padding: 10px 200px 10px 25px;
+  padding: 10px 20px;
+  width: 100%;
+  max-width: 400px;
   font-size: 16px;
   border-radius: 30px;
   border: none;
@@ -38,10 +48,10 @@
 .main-top-left i {
   margin-right: 30px;
 }
-.main-top-left img {
+.main-top-left img{
   border-radius: 50%;
-  width: 40px;
 }
+
 .main-top-left h3 {
   font-size: 20px;
   font-weight: bold;
@@ -49,11 +59,7 @@
 }
 .profile-nav .main-second {
   background-color: white;
-}
-.profile-nav .main-second {
   display: flex;
-}
-.profile-nav .main-second {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -64,7 +70,6 @@
   align-items: center;
 }
 .left img {
-
   margin-right: 20px;
   border-radius: 50%;
 }
@@ -76,7 +81,7 @@
   gap: 20px;
 }
 .right div {
-  background-color: #1877f2;
+  background-color: var(--primary);
   padding: 10px 40px;
   font-size: 15px;
   letter-spacing: 1px;
@@ -84,6 +89,13 @@
   color: white;
   border-radius: 20px;
 }
+.right div:hover {
+  background-color: #145cd6;
+  transform: scale(1.03);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
 .main-content-section .feed-section {
   display: grid;
   grid-template-columns: 2.5fr 1fr;
@@ -111,9 +123,15 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 20px;
-  height: 170px;
+  min-height: 160px;
+height: auto;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  transition: all 0.3s ease;
+}
+.project:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
 }
 .project h5 {
   font-size: 20px;
@@ -157,13 +175,16 @@
   background-color: white;
   padding: 20px 0px;
   border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 .tre-profile {
   display: flex;
   align-items: center;
   padding: 0px 20px;
-  margin-bottom: 20px;
 }
+
 .tre-profile img {
   border-radius: 50%;
   margin-right: 10px;
