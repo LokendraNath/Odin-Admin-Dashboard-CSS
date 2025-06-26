@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
     <link rel="stylesheet" href="style/style.css" />
     <link rel="stylesheet" href="style/sidebar.css" />
     <link rel="stylesheet" href="style/maincontent.css" />
@@ -17,12 +16,16 @@
       href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+
+    <title>Walter White Dashboard</title>
+
   </head>
   <body>
     <div class="container">
       <!-- SideBar -->
-      <div class="sidebar">
-        <div class="logo"><i class="fa-brands fa-gripfire"></i>HeisenBoard</div>
+      <aside class="sidebar">
+        <div class="logo"><i class="fa-brands fa-gripfire"></i>FireBoard</div>
         <div class="nav">
           <div class="nav-item"><i class="fa-solid fa-house"></i> Home</div>
           <div class="nav-item">
@@ -47,24 +50,34 @@
             <i class="fa-solid fa-user-lock"></i>Privacy
           </div>
         </div>
-      </div>
+      </aside>
 
-      <div class="main-content-section">
-        <div class="profile-nav">
+      <main class="main-content-section">
+        <header class="profile-nav">
           <div class="main-top">
-            <div class="search-box">
+            <div class="search-box-container">
               <i class="fa-solid fa-magnifying-glass"></i>
-              <input type="text" class="search-box" />
+              <input type="text" />
             </div>
             <div class="main-top-left">
               <i class="fa-solid fa-comments"></i>
-              <img width="50" src="images/walter-white.jpg" alt="" />
+              <img
+                width="50"
+                height="50"
+                src="images/walter-white.jpg"
+                alt="Walter White Profile Picture"
+              />
               <h3>Walter White</h3>
             </div>
           </div>
           <div class="main-second">
             <div class="left">
-              <img src="images/walter-white.jpg" width="50" alt="" />
+              <img
+                src="images/walter-white.jpg"
+                width="70"
+                height="70"
+                alt="Walter White Profile Picture"
+              />
               <div>
                 <span>Hi there,</span>
                 <h2>Walter White (@Heisenberg)</h2>
@@ -76,7 +89,7 @@
               <div>Share</div>
             </div>
           </div>
-        </div>
+        </header>
         <div class="feed-section">
           <div class="projects-sec">
             <h1>Your Projects</h1>
@@ -205,7 +218,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </main>
     </div>
   </body>
 </html>
